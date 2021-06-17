@@ -90,6 +90,7 @@
         .className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
+		map.setMaxBounds(map.getBounds());
         }
         map.createPane('pane_GoogleSatlite_0');
         map.getPane('pane_GoogleSatlite_0').style.zIndex = 400;
